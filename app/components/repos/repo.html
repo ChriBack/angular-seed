@@ -1,0 +1,22 @@
+﻿
+
+<div>
+
+</div>
+
+<div>
+    <ul class="contributorlist">
+        <li ng-repeat="user in repo">
+            <a href="{{user.html_url}}">
+                <div>
+                    <h4>{{user.login}}</h4>
+                    <img ng-src="{{user.avatar_url}}" title="{{user.login}}" width="75" />
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+<span class="clear"></span>
+
+<!--<a href="#/main">back to search</a>
+<a href="#/user/{{repo.owner.login}}">back to {{repo.owner.login}}</a>-->

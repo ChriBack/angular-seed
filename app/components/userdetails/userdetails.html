@@ -1,0 +1,47 @@
+﻿<div id="userDetails">
+    <div>
+        Name: {{user.login}}<br />
+        Type: {{user.type}}
+    </div>
+    <div>
+        <img ng-src="{{user.avatar_url}}" title="{{user.name}}" width="75" />
+    </div>
+
+    <hr />
+
+    Order:
+    <select ng-model="repoSortOrder">
+        <option value="+name">Name</option>
+        <option value="-stargazers_count">Stars</option>
+        <option value="+langage">Language</option>
+    </select>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Stars</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="repo in repos | orderBy:repoSortOrder">
+                <td>
+                    <!--https://api.github.com/repos/angular/a/subscribers-->
+                    <a href="#/view2/{{user.login}}/{{repo.name}}" title="show subscribers">
+                        <span class="octicon octicon-person"></span>
+                    </a>
+                </td>
+                <td>
+                    <!--<a href="#/repo/{{user.login}}/{{repo.name}}">
+                        {{repo.name}}
+                    </a>-->
+                    {{repo.name}}
+                </td>
+                <td>{{repo.stargazers_count | number}}</td>
+                <td>{{repo.language}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
