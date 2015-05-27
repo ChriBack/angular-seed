@@ -1,0 +1,178 @@
+﻿/* BASE STYLES
+============================================================================= */
+html
+{
+	overflow-x: hidden;
+}
+
+body
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	/*background: url(/images/grey_wash_wall.png);*/
+	font-family: 'Open Sans', sans-serif !important;
+	min-width:320px;
+	width: auto !important;
+	overflow-x: hidden !important;
+	overflow:hidden;
+}
+
+.page
+{
+	position: relative;
+	top: 0;
+	bottom: 0;
+	padding-top: 20px;
+	width: 100%;
+	text-align: center;
+}
+
+.page h1
+{
+	font-size: 60px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.page a
+{
+	margin-top: 50px;
+}
+
+
+
+/* PAGES
+============================================================================= */
+.project-overview-page{
+	
+}
+
+
+
+.page-preview{
+	-webkit-transition: height 0.8s;
+	-moz-transition: height 0.8s;
+	transition: height 0.8s;
+	.view-prev{
+		display:block;
+		font-size: 12px;
+	}
+	&.pprev-img{
+		img{
+			width:65%;
+			margin:0 auto;
+		}
+	}
+}
+
+.project-preview{
+	h1{		
+		margin-bottom: 20px;
+	}
+}
+
+
+.preview-play,.preview-stop{
+	font-size: 50px;
+	cursor:pointer;
+}
+
+.stop-prev{
+	display:none;
+}
+
+/* ANIMATIONS
+============================================================================= */
+
+#main{
+	//max-width: 2000px;
+	//margin: 0 auto;
+	
+	//overflow-x: hidden;
+
+}
+
+.page.ng-leave
+{	
+	z-index: 99;
+}
+
+.page.ng-enter
+{	
+	z-index: 100;
+}
+
+/* page specific animations ------------------------ */
+//ausgelagert
+
+
+
+.thumbnail {
+	background: #333;
+	padding: 0;
+	border:none;
+	.caption {
+		padding: 10px;
+		color: #fff;
+		min-height: 115px;
+		vertical-align: bottom;
+		display: table;
+		height: 115px;
+		text-align: center;
+		width: 100%;
+
+		div{
+			display: table-cell;
+			vertical-align: bottom;
+			h2 {
+				margin: 0 0 10px;
+				text-transform: uppercase;
+				font-size: 20px;
+			}
+			a{
+				margin-top:0;
+			}
+		}
+	}
+}
+
+h2>small {
+	display: block;
+	margin-top: 5px;
+}
+
+.btn-xs {
+	padding: 1px 5px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #c0392a;
+	border-color: #ab3325;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, 
+.btn-primary.active, .open .dropdown-toggle.btn-primary {
+	color: #fff;
+	background-color: #9f2f23;
+	border-color: #79241a;
+}
+
+.project-info{
+	text-align:left;
+	.checkedList,ul {
+		list-style-type:none;
+		padding-left:0;
+		li{
+			padding-left: 14px;
+			margin-bottom: 5px;
+			color: #666;  
+			.checked{
+				margin-right:15px;
+			}
+		}
+	}
+}

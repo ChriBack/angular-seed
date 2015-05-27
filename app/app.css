@@ -39,6 +39,7 @@
 .contributorlist {
     list-style: none;
     display: inline-block;
+    width:100%;
 }
 
     .contributorlist li {
@@ -58,7 +59,8 @@
             height:inherit;
             text-align:center;
             width:100%;
-            background-color: #Fff;
+            background-color: #38C895;
+            color:#fff;
             display: inline-block;
             -webkit-transition: all 1000ms linear;
             -moz-transition: all 1000ms linear;

@@ -1,2 +1,14 @@
 <p>This is the partial for view 1.</p>
+
+
+<form name="searchUser" ng-submit="search(username)">
+    <input type="search" required placeholder="Username to find" ng-model="username" />
+    <input type="submit" value="search" />
+    <!--<input type="submit" value="search" ng-click="search(username)" />
+        ohne rquired geht das, mit nicht
+    -->
+</form>
+
+
+
 <div ng-include="'components/userdetails/userdetails.html'" ng-show="user"></div>

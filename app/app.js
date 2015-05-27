@@ -9,6 +9,18 @@ angular.module('myApp', [
   'myApp.services',
   'myApp.configuration'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider', function ($routeProvider) {
   $routeProvider.otherwise({redirectTo: '/view1'});
+//}]).
+//run(function ($rootScope, page) {
+//    $rootScope.$on('$routeChangeSuccess', function (e) {
+//        console.log(page);
+//    })
+//})
+//run(['$routeProvider', '$rootScope', function ($rootScope, $routeProvider) {
+//    $rootScope.$on("$routeChangeSuccess", function (currentRoute, previousRoute) {
+//        //Change page title, based on Route information
+//        $rootScope.title = $route.current.title;
+//    });
+    //
 }]);

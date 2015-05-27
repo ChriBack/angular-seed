@@ -1,0 +1,164 @@
+﻿@import "animations/_rotateFall.scss";
+@import "animations/_scaleUp.scss";
+@import "animations/_slideInRight.scss";
+@import "animations/_slideInUp.scss";
+@import "animations/_rotateOutNewspaper.scss";
+
+@import "animations/_flipInY.scss";
+@import "animations/_fadeIn.scss";
+@import "animations/_fadeOut.scss";
+@import "animations/_fadeInDown.scss";
+@import "animations/_fadeInUp.scss";
+@import "animations/_slideInLeft.scss";
+@import "animations/_bounceIn.scss";
+@import "animations/_bounceInUp.scss";
+
+.animated
+{
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-ms-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.delay_0_2
+{
+    -moz-animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    -o-animation-delay: .2s;
+    animation-delay: .2s;
+}
+
+.delay_0_4
+{
+    -moz-animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+    -o-animation-delay: .4s;
+    animation-delay: .4s;
+}
+
+.delay_0_6
+{
+    -moz-animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+    -o-animation-delay: .6s;
+    animation-delay: .6s;
+}
+
+.delay_0_8
+{
+    -moz-animation-delay: .8s;
+    -webkit-animation-delay: .8s;
+    -o-animation-delay: .8s;
+    animation-delay: .8s;
+}
+
+.delay_1_0
+{
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay_1_2
+{
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    animation-delay: 1.2s;
+}
+
+.delay_1_4
+{
+    -moz-animation-delay: 1.4s;
+    -webkit-animation-delay: 1.4s;
+    -o-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.delay_1_6
+{
+    -moz-animation-delay: 1.6s;
+    -webkit-animation-delay: 1.6s;
+    -o-animation-delay: 1.6s;
+    animation-delay: 1.6s;
+}
+
+.delay_1_8
+{
+    -moz-animation-delay: 1.8s;
+    -webkit-animation-delay: 1.8s;
+    -o-animation-delay: 1.8s;
+    animation-delay: 1.8s;
+}
+
+.delay_2_0
+{
+    -moz-animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+
+
+.flipInY
+{
+    -webkit-backface-visibility: visible!important;
+    -webkit-animation-name: flipInY;
+    -moz-backface-visibility: visible!important;
+    -moz-animation-name: flipInY;
+    -o-backface-visibility: visible!important; 
+    -o-animation-name: flipInY;
+    backface-visibility: visible!important;
+    animation-name: flipInY; 
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    -moz-animation-name: fadeInDown;
+    -o-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    -moz-animation-name: slideInLeft;
+    -o-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    -moz-animation-name: bounceIn;
+    -o-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+.bounceInUp {
+    -webkit-animation-name: bounceInUp;
+    -moz-animation-name: bounceInUp;
+    -o-animation-name: bounceInUp;
+    animation-name: bounceInUp;
+}

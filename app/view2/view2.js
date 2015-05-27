@@ -12,9 +12,9 @@ angular.module('myApp.view2', ['ngRoute'])
 .controller('View2Ctrl', [
     '$scope', '$log',
     'github', 'config', '$routeParams',
-    function ($scope, $log, github, config, $routeParams) {
+    function ($scope, $log, github, config, $routeParams,page) {
         $log.info("init View2Ctrl");
-  
+        $scope.pageClass = 'page-home';       
 
         var onRepo = function (data) {
             $scope.repo = data;

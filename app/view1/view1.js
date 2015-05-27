@@ -14,7 +14,7 @@ angular.module('myApp.view1', ['ngRoute'])
     'github', 'config',
     function ($scope, $log, github, config) {
         $log.info("init View1Ctrl");
-        
+                
         var onRepos = function (data) {
             $scope.repos = data;
         }
@@ -30,9 +30,26 @@ angular.module('myApp.view1', ['ngRoute'])
             console.log(reason);
             $scope.error = "Could not fetch data";
         }
-        github.getUser("angular")
-        .then(onUserComplete, onError);
+
+        if (config.serchedUsername === "") {
+            github.getUser("angular")
+                .then(onUserComplete, onError);
+        }
+        else {
+            github.getUser(config.serchedUsername)
+                .then(onUserComplete, onError);
+        }
+        
 
         $scope.repoSortOrder = config.repoSortOrder;
+
+        $scope.search = function (username) {
+            $log.info("Searching for " + username);
+
+            config.serchedUsername = username;
+
+            github.getUser(username)
+                .then(onUserComplete, onError);
+        }
 
     }]);
