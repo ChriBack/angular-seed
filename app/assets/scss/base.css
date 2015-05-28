@@ -913,7 +913,7 @@ body {
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   backface-visibility: hidden;
-  background: url(/images/grey_wash_wall.png);
+  /*background: url(/images/grey_wash_wall.png);*/
   font-family: 'Open Sans', sans-serif !important;
   min-width: 320px;
   width: auto !important;
