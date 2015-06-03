@@ -10,10 +10,17 @@ angular.module('myApp', [
   'myApp.cardservice',
   'myApp.configuration',
   'myApp.cards',
-  'myApp.errSrc'
+  'myApp.errSrc',
+  'myApp.viewtasks',
+  'myApp.taskservice'
 ]).
-config(['$routeProvider', function ($routeProvider) {
+config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
     $routeProvider.otherwise({ redirectTo: '/view1' });
+    //Enable cross domain calls
+    $httpProvider.defaults.useXDomain = true;
+
+    //Remove the header used to identify ajax call  that would prevent CORS from working
+    delete $httpProvider.defaults.headers.common['X-Requested-With'];
 }]).
 run(function ($rootScope) {
 
@@ -21,45 +28,9 @@ run(function ($rootScope) {
         
         
 
-        console.log('Hello World');
-        $(".animated")
-            .mouseenter(function(evt){
-                
-                console.log("entering");
-                $(this).find(".cards-tooltip").addClass("currentToolTip").clone().appendTo( "body" ).show();
-            })
-            //.mouseover(function (evt) {
-                
-            //    $("body").find(".currentToolTip").css({
-            //        left: evt.pageX + 20,
-            //        top: evt.pageY + 20
-            //    })
-            //})
-            .mousemove(function (evt) {
-                
-                if ($(window).width() - evt.pageX < 240) {
-                    $("body").find(".currentToolTip").css({
-                        left: 'auto',
-                        top: evt.pageY + 20,
-                        right: $(window).width() - evt.pageX
-                    })
-
-                }
-                else {
-                    $("body").find(".currentToolTip").css({
-                        left: evt.pageX + 20,
-                        top: evt.pageY + 20
-                    })
-                }
-
-                
-            })
-            .mouseleave(function (evt) {
-                
-                console.log("leaving");
-                $("body").find(".currentToolTip:last").remove();
-            })
-
+        console.log('Hello World, app is ready');
+        
+        initToolTip();
 
           
         

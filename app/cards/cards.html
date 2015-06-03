@@ -1,7 +1,54 @@
-<div>
-    <ul class="cardslist">
+<div class="clearfix">
+    <ul class="list-group row cardslist">
+        <li class="list-group-item col-xs-12 col-sm-6 col-md-4 col-lg-3 delay_0_6 animated flipInY" ng-repeat="card in cards | limitTo:cardsLimit">
+            <a class="cardDisplay">
+                <div>
+                    <div class="cards-tooltip">
+                        <table width="100%">
+                            <tr>
+                                <td>{{card.name}}</td>
+                                <td></td>
+                                <td>{{card.type}}</td>
+                            </tr>
+                            <tr>
+                                <td>{{card.cost}}</td>
+                                <td>{{card.attack}}</td>
+                                <td>{{card.health}}</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p class="flavor">{{card.flavor }}</p>
+                                </td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                        </table>
+                        <!--<h4>{{card.name}}</h4>
+                    <h4>{{card.cost }}</h4>
+                    <h4>{{card.type }}</h4>
+                    <h4>{{card.rarity }}</h4>
+                    <h4>{{card.faction }}</h4>
+                    <h4>{{card.mechanics}}</h4>
+                    <h4>{{card.flavor }}</h4>
+                    <h4>{{card.artist  }}</h4>
+                    <h4>{{card.attack  }}</h4>
+                    <h4>{{card.health  }}</h4>
+                    <h4>{{card.collectible  }}</h4>
+                    <h4>{{card.id  }}</h4>
+                    <h4>{{card.elite   }}</h4>-->
+                    </div>
+                    <!--<img ng-src="http://wow.zamimg.com/images/hearthstone/cards/dede/original/{{card.id  }}.png" err-src="assets/img/placeholder.png" />-->
+                    <img ng-src="http://wow.zamimg.com/images/hearthstone/cards/dede/medium/{{card.id  }}.png" err-src="assets/img/placeholder.png" class=""/>
+
+
+                </div>
+            </a>
+        </li>
+    </ul>
+    <!--<ul class="cardslist">
         <li ng-repeat="card in cards | limitTo:cardsLimit">
-            <a class="delay_0_6 animated flipInY">
+            <a class="delay_0_6 animated flipInY cardDisplay">
                 <div>
                     <div class="cards-tooltip">
                         <table width="100%">
@@ -37,14 +84,14 @@
                         <h4>{{card.collectible  }}</h4>
                         <h4>{{card.id  }}</h4>
                         <h4>{{card.elite   }}</h4>-->
-                    </div>
-                    <!--<img ng-src="http://wow.zamimg.com/images/hearthstone/cards/dede/original/{{card.id  }}.png" err-src="assets/img/placeholder.png" />-->
-                    <img ng-src="http://wow.zamimg.com/images/hearthstone/cards/dede/medium/{{card.id  }}.png" err-src="assets/img/placeholder.png" />
+    <!--</div>-->
+    <!--<img ng-src="http://wow.zamimg.com/images/hearthstone/cards/dede/original/{{card.id  }}.png" err-src="assets/img/placeholder.png" />-->
+    <!--<img ng-src="http://wow.zamimg.com/images/hearthstone/cards/dede/medium/{{card.id  }}.png" err-src="assets/img/placeholder.png" />
 
 
                 </div>
             </a>
         </li>
     </ul>
-    <div class="clear"></div>
+    <div class="clear"></div>-->
 </div>

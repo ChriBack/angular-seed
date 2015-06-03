@@ -1,14 +1,19 @@
-<p>This is the partial for view 2.</p>
+<!--<p>This is the partial for view 2.</p>-->
 
 
-
-
-<div ng-include="'components/repos/repo.html'" ng-show="repo">
-
+<div class="jumbotron text-center">
+    <h2>AngularJS Test Github API</h2>
 </div>
 
+<div class="row clearfix">
 
-<p>
-  Showing of 'interpolate' filter:
-  {{ 'Current version is v%VERSION%.' | interpolate }}
-</p>
+    <div ng-include="'components/repos/repo.html'" ng-show="repo">
+
+    </div>
+
+
+    <!--<p>
+        Showing of 'interpolate' filter:
+        {{ 'Current version is v%VERSION%.' | interpolate }}
+    </p>-->
+</div>

@@ -1,0 +1,29 @@
+﻿
+
+    <div>
+        awd
+    </div>
+
+    <div>
+        <ul class="tasklist">
+            <li ng-repeat="task in tasks">
+               <div>
+                   <span>{{task.Id}}</span>
+                   <input type="checkbox" ng-model="task.Completed">
+                   <span>{{task.Completed}}</span>
+                   <span>{{task.Date}}</span>
+                   <input type="text" ng-model="task.Name" value="{{task.Name}}" />
+               </div>
+            </li>
+            <li>
+                ADD:<form>
+                    <input class="add-input" placeholder="I need to..." type="text" ng-model="formTodoText" />
+                        <button class="add-btn" ng-click="addTodo(formTodoText)"><h2>Add</h2></button>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <span class="clear"></span>
+
+    <!--<a href="#/main">back to search</a>
+    <a href="#/user/{{repo.owner.login}}">back to {{repo.owner.login}}</a>-->

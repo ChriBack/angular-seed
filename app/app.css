@@ -37,112 +37,48 @@
 
 
 .contributorlist {
-    list-style: none;
-    display: inline-block;
-    width: 100%;
 }
 
     .contributorlist li {
-        float: left;
-        max-width: 150px;
-        padding: 15px;
-        width: 10%;
-        height: 150px;
+        /*background-color: #38C895;
+        color: #fff;*/
+        -webkit-transition: all 1000ms linear;
+        -moz-transition: all 1000ms linear;
+        -o-transition: all 1000ms linear;
+        -ms-transition: all 1000ms linear;
+        transition: all 1000ms linear;
     }
 
-        .contributorlist li a:hover {
-            background-color: #4183C4;
-            color: #dc3535;
+        .contributorlist li:hover {
+            /*background-color: #4183C4;
+            color: #dc3535;*/
         }
-
-        .contributorlist li a {
-            height: inherit;
-            text-align: center;
-            width: 100%;
-            background-color: #38C895;
-            color: #fff;
-            display: inline-block;
-            -webkit-transition: all 1000ms linear;
-            -moz-transition: all 1000ms linear;
-            -o-transition: all 1000ms linear;
-            -ms-transition: all 1000ms linear;
-            transition: all 1000ms linear;
-        }
-
-            .contributorlist li a img {
-                vertical-align: bottom;
-            }
-
 
 
 .cardslist {
-    list-style: none;
-    display: inline-block;
-    width: 100%;
-    padding: 0;
-    margin: 0;
 }
 
-    .cardslist li {
-        float: left;
-        padding: 15px;
-        width: 20%;
-        height: 310px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin-bottom: 15px;
-        margin-top: 15px;
+    .cardslist li a .cards-tooltip {
+        display: none;
     }
 
-        .cardslist li a:hover {
-            background-color: #4183C4;
-            color: #dc3535;
-        }
 
-        .cardslist li a {
-            height: inherit;
-            text-align: center;
-            width: 100%;
-            background-color: #38C895;
-            color: #fff;
-            display: inline-block;
-            -webkit-transition: all 1000ms linear;
-            -moz-transition: all 1000ms linear;
-            -o-transition: all 1000ms linear;
-            -ms-transition: all 1000ms linear;
-            transition: all 1000ms linear;
-        }
-
-            .cardslist li a img {
-                vertical-align: bottom;
-                top: 0;
-                position: absolute;
-                left: 0;
-            }
-
-            .cardslist li a .cards-tooltip {
-                display: none;
-            }
-
-
-.currentToolTip{
-  position: absolute;
-  background-color: rgba(91, 157, 73, 0.99);
-  border-radius: 5px;
-  border: 1px solid black;
-  z-index: 50;
-  min-height: 80px;
-  width: 240px;
-  color: yellow;
-  color: black;
-  font-size: 14px;
-  padding: 2px;
-  display:table;
-  /*width:auto;*/
-
-  
+.currentToolTip {
+    position: absolute;
+    background-color: #C4CDC1; /*98AEAD*/
+    border-radius: 5px;
+    border: 1px solid black;
+    z-index: 50;
+    min-height: 80px;
+    width: 240px;
+    color: yellow;
+    color: black;
+    font-size: 14px;
+    padding: 2px;
+    display: table;
+    /*width:auto;*/
 }
-.currentToolTip .flavor{
-    max-width:240px;
-}
+
+    .currentToolTip .flavor {
+        max-width: 240px;
+    }

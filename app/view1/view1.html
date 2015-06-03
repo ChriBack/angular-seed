@@ -1,14 +1,20 @@
-<p>This is the partial for view 1.</p>
+<!--<p>This is the partial for view 1.</p>-->
+
+<div class="jumbotron text-center">
+    <h2>AngularJS Test Github API</h2>
+</div>
+
+<div class="row clearfix">
+
+    <form name="searchUser" ng-submit="search(username)">
+        <input type="search" required placeholder="Username to find" ng-model="username" />
+        <input type="submit" value="search" />
+        <!--<input type="submit" value="search" ng-click="search(username)" />
+            ohne rquired geht das, mit nicht
+        -->
+    </form>
 
 
-<form name="searchUser" ng-submit="search(username)">
-    <input type="search" required placeholder="Username to find" ng-model="username" />
-    <input type="submit" value="search" />
-    <!--<input type="submit" value="search" ng-click="search(username)" />
-        ohne rquired geht das, mit nicht
-    -->
-</form>
 
-
-
-<div ng-include="'components/userdetails/userdetails.html'" ng-show="user"></div>
+    <div ng-include="'components/userdetails/userdetails.html'" ng-show="user"></div>
+</div>

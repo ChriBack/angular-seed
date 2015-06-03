@@ -1,11 +1,21 @@
 ﻿
 
-<div>
 
-</div>
+<div class="clearfix">
+    <ul class="list-group row contributorlist">
+        <li class="list-group-item col-xs-12 col-sm-4 col-md-3 col-lg-4 delay_0_6 animated flipInY" ng-repeat="user in repo">
+            <a href="{{user.html_url}}" class="">
+                <div>
+                    <h4>{{user.login}}</h4>
+                    <img ng-src="{{user.avatar_url}}" title="{{user.login}}" width="75" />
+                </div>
+            </a>
+        </li>
+    </ul>
 
-<div>
-    <ul class="contributorlist">
+
+
+    <!--<ul class="contributorlist">
         <li ng-repeat="user in repo">
             <a href="{{user.html_url}}" class="delay_0_6 animated flipInY">
                 <div>
@@ -14,9 +24,9 @@
                 </div>
             </a>
         </li>
-    </ul>
+    </ul>-->
 </div>
-<span class="clear"></span>
+<!--<span class="clear"></span>-->
 
 <!--<a href="#/main">back to search</a>
 <a href="#/user/{{repo.owner.login}}">back to {{repo.owner.login}}</a>-->

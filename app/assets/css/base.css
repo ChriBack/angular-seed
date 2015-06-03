@@ -984,7 +984,7 @@
 
 /* line 1, ../scss/_header.scss */
 .header {
-  background: #E23337;
+  /*background: #E23337;*/
 }
 
 /* line 2, ../scss/_bs_overwrites.scss */
@@ -1031,7 +1031,7 @@ body {
 
 /* line 37, ../scss/_styles.scss */
 .page a {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 /* PAGES
