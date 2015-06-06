@@ -29,4 +29,27 @@
         console.log("leaving");
         $("body").find(".currentToolTip:last").remove();
     });
+
+
+
+    //$(".card-flip").click(function () {
+    //    $(".card-flip").not(this).flip(false);
+    //});
+
+    //$('.flip').click(function () {
+    //    //$(this).find('.card').addClass('flipped').mouseleave(function () {
+    //    //    $(this).removeClass('flipped');
+    //    //});      
+        
+    //    if($(this).find('.card').hasClass('flipped')){
+    //        $(this).find('.card').removeClass('flipped');
+    //    }
+    //    else {
+    //        $(this).find('.card').addClass('flipped');
+    //    }
+
+    //    $(".card").not($(this).find('.card')).removeClass('flipped');
+    //    return false;
+    //});
+
 };
